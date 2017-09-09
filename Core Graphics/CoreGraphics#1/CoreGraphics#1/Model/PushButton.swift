@@ -10,12 +10,18 @@ import UIKit
 
 class PushButton: UIButton {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
+    
+    ///Draw our button.
     override func draw(_ rect: CGRect) {
-        // Drawing code
+        
+        /*Creates the path for our button. Since our width and height are equals
+         this path will be an circle*/
+        let path = UIBezierPath(ovalIn: rect)
+        
+        UIColor.green.setFill() //Fill the actual context (Button in this case) with green color.
+        path.fill() //Fill our path
+        
     }
-    */
+ 
 
 }
