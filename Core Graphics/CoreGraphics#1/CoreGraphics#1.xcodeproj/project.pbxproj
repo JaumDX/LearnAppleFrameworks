@@ -12,6 +12,7 @@
 		75F573D41F637AB400C9558C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F573D21F637AB400C9558C /* Main.storyboard */; };
 		75F573D61F637AB400C9558C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75F573D51F637AB400C9558C /* Assets.xcassets */; };
 		75F573D91F637AB400C9558C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F573D71F637AB400C9558C /* LaunchScreen.storyboard */; };
+		75F573E41F6380F900C9558C /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F573E31F6380F900C9558C /* PushButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		75F573D51F637AB400C9558C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75F573D81F637AB400C9558C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75F573DA1F637AB400C9558C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75F573E31F6380F900C9558C /* PushButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PushButton.swift; path = Model/PushButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		75F573CD1F637AB400C9558C /* CoreGraphics#1 */ = {
 			isa = PBXGroup;
 			children = (
+				75F573E21F6380BA00C9558C /* Controller */,
+				75F573E11F6380B500C9558C /* View */,
+				75F573E01F6380AD00C9558C /* Model */,
 				75F573CE1F637AB400C9558C /* AppDelegate.swift */,
-				75F573D01F637AB400C9558C /* ViewController.swift */,
-				75F573D21F637AB400C9558C /* Main.storyboard */,
 				75F573D51F637AB400C9558C /* Assets.xcassets */,
-				75F573D71F637AB400C9558C /* LaunchScreen.storyboard */,
 				75F573DA1F637AB400C9558C /* Info.plist */,
 			);
 			path = "CoreGraphics#1";
+			sourceTree = "<group>";
+		};
+		75F573E01F6380AD00C9558C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75F573E31F6380F900C9558C /* PushButton.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		75F573E11F6380B500C9558C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75F573D21F637AB400C9558C /* Main.storyboard */,
+				75F573D71F637AB400C9558C /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		75F573E21F6380BA00C9558C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				75F573D01F637AB400C9558C /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +165,7 @@
 			files = (
 				75F573D11F637AB400C9558C /* ViewController.swift in Sources */,
 				75F573CF1F637AB400C9558C /* AppDelegate.swift in Sources */,
+				75F573E41F6380F900C9558C /* PushButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "CoreGraphics#1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.jaum.CoreGraphics-1";
@@ -274,6 +303,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "CoreGraphics#1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.jaum.CoreGraphics-1";
