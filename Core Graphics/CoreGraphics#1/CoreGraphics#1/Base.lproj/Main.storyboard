@@ -27,12 +27,31 @@
                                     <constraint firstAttribute="width" constant="100" id="KbI-Ld-Hci"/>
                                     <constraint firstAttribute="height" constant="100" id="pEd-jj-hqV"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.047058823530000002" green="0.38823529410000002" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vb-YO-CKf" customClass="PushButton" customModule="CoreGraphics_1" customModuleProvider="target">
+                                <rect key="frame" x="162" y="503.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="9RY-tX-5ic"/>
+                                    <constraint firstAttribute="height" constant="50" id="fGL-6b-PyM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="1" green="0.39544236659999998" blue="0.35923108459999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="0vb-YO-CKf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Baj-FC-OU8"/>
                             <constraint firstItem="5eg-oA-Hbf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Foe-Ms-wJW"/>
+                            <constraint firstItem="0vb-YO-CKf" firstAttribute="top" secondItem="5eg-oA-Hbf" secondAttribute="bottom" constant="20" id="MX3-1x-0uJ"/>
                             <constraint firstItem="5eg-oA-Hbf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="N2J-UO-yTp"/>
                         </constraints>
                     </view>
