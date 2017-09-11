@@ -8,6 +8,11 @@
 
 import UIKit
 
+
+extension FloatingPoint {
+    var degreesToRadians: Self { return self * .pi / 180 }
+}
+
 //With @IBDesignable we can see our design changes on storyboard, without need to run the app everytime.
 @IBDesignable
 class PushButton: UIButton {
@@ -48,11 +53,6 @@ class PushButton: UIButton {
         path.fill() //Fill our path
         
         
-        
-        /////
-        
-        
-        
         let plusWidth : CGFloat = min(bounds.width, bounds.height) * Constants.plusButtonScale // set the width and height for the line
         let halfPlusWidth = plusWidth / 2
         
@@ -72,6 +72,7 @@ class PushButton: UIButton {
         plusPath.addLine(to: CGPoint(
             x: halfWidth + halfPlusWidth,
             y: halfHeight))
+        
         
         if isAddButton{
             
